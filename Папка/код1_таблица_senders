@@ -1,0 +1,9 @@
+CREATE TABLE senders (
+    sender_id SERIAL PRIMARY KEY,            -- Автоинкрементный первичный ключ
+    last_name VARCHAR(50) NOT NULL,          -- Фамилия
+    first_name VARCHAR(50) NOT NULL,         -- Имя
+    middle_name VARCHAR(50),                 -- Отчество (может быть пустым)
+    address TEXT NOT NULL,                   -- Адрес
+    passport_data VARCHAR(20) NOT NULL,      -- Паспортные данные
+    phone_number VARCHAR(20)                 -- Контактный телефон
+);
